@@ -30,6 +30,18 @@ The PDS portal is composed of multiple repositories, each serving a specific pur
   - Provides search functionality integrated into the portal
   - Homepage: [https://www.earthdata.nasa.gov/data/catalog](https://www.earthdata.nasa.gov/data/catalog)
 
+- **[portal-search-ui-legacy](https://github.com/NASA-PDS/portal-search-ui-legacy)** - Legacy Keyword Search UI
+  - Legacy search interface querying the Legacy Registry through Apache Solr
+  - Tomcat-based application packaged as a WAR file
+  - Requires Apache Tomcat 8.5+ and Legacy Registry with Apache Solr
+  - Homepage: [https://pds.nasa.gov/datasearch/keyword-search/](https://pds.nasa.gov/datasearch/keyword-search/)
+
+- **[portal-ds-view](https://github.com/NASA-PDS/portal-ds-view)** - Data Set View application
+  - Browse interface for PDS context products
+  - Tomcat-based application packaged as a WAR file
+  - Deployed at pds.nasa.gov/ds-view
+  - Built with Maven, includes Docker support
+
 ### 📚 Legacy/Historical
 
 - **[portal-legacy](https://github.com/NASA-PDS/portal-legacy)** - Previous PDS.nasa.gov website
@@ -74,6 +86,7 @@ Create an issue in this repository (portal) to track requests for the pds.nasa.g
 ### For Development
 - **Current portal development**: See [portal-infra](https://github.com/NASA-PDS/portal-infra) and [portal-wst-docker-drupal](https://github.com/NASA-PDS/portal-wst-docker-drupal)
 - **Search functionality**: See [portal-search](https://github.com/NASA-PDS/portal-search)
+- **Tomcat applications**: See [portal-search-ui-legacy](https://github.com/NASA-PDS/portal-search-ui-legacy) and [portal-ds-view](https://github.com/NASA-PDS/portal-ds-view)
 - **Legacy site testing**: See [portal-legacy-docker](https://github.com/NASA-PDS/portal-legacy-docker)
 
 ## Support
